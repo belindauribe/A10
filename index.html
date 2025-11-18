@@ -44,11 +44,13 @@ function checkCookie() {
       setCookie("username", user, 365);
     }
   }
-}
+document.getElementById("cookieDisplay").textContent =
+    "Current Cookie: username=" + user;
         checkCookie();
+}
     </script>
-</body>
-<footer>
+    <footer>
     <p>&copy; Belinda Uribe November 18 2025 </p>
-</footer>
+    </footer>
+</body>
 </html>
